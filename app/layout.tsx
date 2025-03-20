@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Login • Instagram",
-  description: "Instagram login page",
+  title: "Instagram",
+  description: "Instagram login page clone",
+  icons: {
+    icon: "/instagram-favicon.ico",
+    shortcut: "/instagram-favicon.ico",
+    apple: "/instagram-favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -14,7 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/png" href="https://static.cdninstagram.com/rsrc.php/v3/yR/r/lam-fZmwmvn.png" />
+        <link rel="icon" href="/instagram-favicon.ico" sizes="any" />
+        <link rel="shortcut icon" href="/instagram-favicon.ico" />
+        <link rel="apple-touch-icon" href="/instagram-favicon.ico" />
         <link
           rel="stylesheet"
           href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
